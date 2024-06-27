@@ -1,12 +1,10 @@
 import { Server } from 'socket.io';
-import cors from 'cors';
-import express from 'express';
 
 
-const app = express();
-app.use(cors());
+
+
+
 const PORT=process.env.PORT||9000
-app.listen(8088, () => console.log(`Server is running successfully on PORT ${PORT}`));
 const io = new Server(PORT, {
    
     cors: {
