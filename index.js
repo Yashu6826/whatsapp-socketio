@@ -8,7 +8,7 @@ const PORT=process.env.PORT||9000
 const io = new Server(PORT, {
    
     cors: {
-        origin: 'https://playful-pithivier-2ebb2d.netlify.app/',
+        origin: '*',
     }, 
 })
 
